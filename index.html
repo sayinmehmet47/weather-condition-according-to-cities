@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css' rel='stylesheet' />
+
+  <link rel="stylesheet" href="./style.css">
+  <title>Weather based on City Name</title>
+</head>
+
+<body>
+  <form>
+
+    <h3> Weather based on City Name
+    </h3>
+
+    <p>
+      <label for="city">Enter the City</label>
+      <input type="text" required pattern=^[a-zA-Z]+(?:(?:\\s+|-)[a-zA-Z]+)*$></input>
+    </p>
+    <div>
+      <button type="submit" value="Submit">Load data</button>
+    </div>
+
+
+  </form>
+
+
+  <!-- this will show our spinner -->
+  <div hidden id="spinner">
+  </div>
+
+  <div id="error"></div>
+  <div id='map' style='width: 400px; height: 300px; margin-top: 90px;'></div>
+
+
+  <script>
+
+
+  </script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
